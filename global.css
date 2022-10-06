@@ -1,7 +1,7 @@
 #welcome_head {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: auto;
     height: auto;    
 }
 
@@ -10,6 +10,6 @@
 }
 
 #my_pic {
-    align-items: right;
+    float: right;
     padding: 0 50px 0px 0px;
 }
