@@ -4,8 +4,8 @@ body {
 }
 
 #welcome_head {
-    display: flex;
-    align-items: center;
+    display: grid;
+    text-align: center;
     width: auto;
     height: auto;    
 }
@@ -24,10 +24,51 @@ body {
 }
 
 .contact_form {
-    display: flex;
+    display: grid;
     justify-content: center;
     margin: 0 auto;
-    width: 800 px;
-    height: 600 px;
+    width: auto;
+    height: auto;
+    grid-template-columns: 2 fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+}
 
+#firstName {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#lastName {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#email {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#number {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#comments {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+#input {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#checkBox {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+#submit {
+    grid-column: 1;
+    grid-row: 8;
 }
