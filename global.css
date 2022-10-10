@@ -75,3 +75,29 @@ body {
     grid-column: 1;
     grid-row: 8;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column {
+    flex: 30%;
+    max-width: 30%;
+    height: auto;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
