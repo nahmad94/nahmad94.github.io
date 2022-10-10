@@ -1,6 +1,8 @@
 body {
     margin: 0 auto;
     text-align: center;
+    background-image: url("./favicon_io/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
 }
 
 #welcome_head {
@@ -25,8 +27,9 @@ body {
 
 .contact_form {
     display: grid;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: left;
+    margin-left: 25px;
+    padding-left: 25px;
     width: auto;
     height: auto;
     grid-template-columns: 2 fr 4fr;
