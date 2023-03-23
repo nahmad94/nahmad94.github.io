@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./global.css">
     <title>Naveed Ahmad</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./global.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("ulvl6LJHWKdeop1uh");
+      })();
+    </script>
+    <script src="contact.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,37 +48,33 @@
 
     <hr />
     <form class="contact_form">
-          <div id = "firstName" class="col-md-12 mb-8">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First Name" required>
+          <div class="col-md-12 mb-8">
+            <label for="validationDefault01">Name</label>
+            <input id = "name" type="text" class="form-control" id="validationDefault01" placeholder="First Name" required>
           </div>
-          <div id = "lastName" class="col-md-12 mb-8">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name" required>
-          </div>
-          <div id = "email" class="col-md-12 mb-8">
+          <div class="col-md-12 mb-8">
             <label for="validationDefault03">Email</label>
-            <input type="text" class="form-control" id="validationDefault03" placeholder="email@email.com" required>
+            <input id = "email" type="text" class="form-control" id="validationDefault03" placeholder="email@email.com" required>
           </div>
-          <div id = "number" class="col-md-12 mb-8">
+          <div class="col-md-12 mb-8">
             <label for="validationDefault04">Phone Number</label>
-            <input type="number" class="form-control" id="validationDefault05" placeholder="000-000-0000" required>
+            <input id = "number" type="number" class="form-control" id="validationDefault05" placeholder="000-000-0000" required>
           </div>
-          <div id = "comments" class="form-group">
+          <div class="form-group">
             <label for="exampleFormControlTextarea1">Reason for contact</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea id = "message" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
           </div>
-          <div id = "input" class="form-group">
+          <!-- <div id = "input" class="form-group">
             <label for="exampleFormControlFile1">File input</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
+          </div> -->
           <div id = "checkBox" class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
             <label class="form-check-label" for="invalidCheck2">
-              Agree to terms and conditions
+              I agree to the terms and conditions
             </label>
           </div>
-          <button id = "submit" class="btn btn-primary" type="submit">Submit form</button>
+          <button id = "submit" class="btn btn-primary" type="submit" onclick=sendMail()>Submit form</button>
     </form>    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
