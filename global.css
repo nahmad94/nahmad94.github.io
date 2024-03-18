@@ -26,14 +26,17 @@ body {
 }
 
 .contact_form {
-    display: grid;
-    justify-content: left;
-    margin-left: 25px;
-    padding-left: 25px;
-    width: auto;
-    height: auto;
-    grid-template-columns: 2 fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 0.5fr 1fr;
+    /* display: grid; */
+    justify-content: center;
+    margin: 2em;
+    /* padding-left: 20px; */
+    max-width: auto;
+    max-height: auto;
+    background-color: white;
+    /* border-radius: 50px; */
+    padding: 50px;
+    /* grid-template-columns: 2 fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 0.5fr 1fr; */
 }
 
 #firstName {
