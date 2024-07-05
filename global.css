@@ -86,11 +86,11 @@ body {
     margin: 10px;
 }
 
-.column {
+/* .column {
     flex: 30%;
     max-width: 30%;
     height: auto;
-}
+} */
 
 .column img {
     margin-top: 8px;
