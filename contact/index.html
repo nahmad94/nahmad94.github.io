@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Naveed Ahmad</title>
+  <meta name="description" content="Contact Naveed Ahmad or Ahmad Consulting Group.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Naveed Ahmad">
+  <meta property="og:description" content="Contact Naveed Ahmad or Ahmad Consulting Group.">
+  <meta property="og:url" content="https://nahmad94.github.io/contact/">
+  <meta property="og:image" content="https://nahmad94.github.io/assets/img/naveed.jpg">
+  <link rel="icon" type="image/png" href="../assets/img/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="../assets/img/icons/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <script>
+    // Decide context before paint so the right nav shows immediately.
+    window.CONTACT_CTX = new URLSearchParams(location.search).get('ctx') === 'acg' ? 'acg' : 'personal';
+    document.documentElement.setAttribute('data-ctx', window.CONTACT_CTX);
+  </script>
+  <style>
+    html[data-ctx="acg"] .ctx-personal { display: none !important; }
+    html[data-ctx="personal"] .ctx-acg { display: none !important; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <!-- Personal navigation -->
+    <nav class="wrap ctx-personal" aria-label="Main">
+      <a class="brand" href="../index.html">Naveed Ahmad</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a data-link="resume" href="../assets/docs/Naveed-Ahmad-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="../acg/index.html">ACG</a></li>
+        <li><a href="../contact/index.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ACG navigation: ACG and Contact only -->
+    <nav class="wrap ctx-acg" aria-label="Main">
+      <a class="brand brand-acg" href="../acg/index.html"><span class="stamp">ACG</span><span class="full">Ahmad Consulting Group</span></a>
+      <ul class="nav-links">
+        <li><a href="../acg/index.html">ACG</a></li>
+        <li><a href="../contact/index.html?ctx=acg" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom:32px">
+      <div class="wrap">
+        <h1 class="ctx-personal">Get in touch</h1>
+        <h1 class="ctx-acg">Describe the task</h1>
+        <p class="lead ctx-personal" style="max-width:48ch">Hiring for an implementation or project role, or have a question about something on this site? Send a note.</p>
+        <p class="lead ctx-acg" style="max-width:52ch">Tell me what your team does by hand, how often it happens and what it lives in today: spreadsheets, paper, an app. You'll get a reply within two business days.</p>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-bottom:96px">
+      <div class="contact-grid">
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-company">Company <span class="opt">(optional)</span></label>
+            <input id="f-company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-reason">What is this about?</label>
+            <select id="f-reason" name="reason">
+              <option value="Hiring">Hiring</option>
+              <option value="Consulting project">A consulting project</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" required></textarea>
+            <p class="hint ctx-acg">Helpful details: the task, how many people do it, how often, and how long it takes them.</p>
+          </div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <button class="btn btn-solid" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="direct" aria-label="Other ways to reach me">
+          <h2 style="font-size:1.25rem">Prefer email?</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd class="ctx-personal"><a data-link="personal-email" data-text="personal-email" href="#">Email</a></dd>
+            <dd class="ctx-acg"><a data-link="acg-email" data-text="acg-email" href="#">Email</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a data-link="linkedin" href="#" target="_blank" rel="noopener">linkedin.com/in/nahmad-pm</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="ctx-personal">&copy; <span class="yr">2026</span> Naveed Ahmad</span>
+      <span class="ctx-acg">&copy; <span class="yr">2026</span> Ahmad Consulting Group</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/contact.js"></script>
+</body>
+</html>
