@@ -13,6 +13,7 @@
   <link rel="icon" type="image/png" href="assets/img/icons/favicon-32x32.png">
   <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/global.css">
 </head>
 <body>
@@ -42,10 +43,18 @@
             <a class="btn btn-solid" data-link="resume" href="assets/docs/Naveed-Ahmad-Resume.pdf" target="_blank" rel="noopener">Open my resume</a>
             <a class="btn" href="contact/index.html">Get in touch</a>
           </div>
+          <div class="portrait">
+            <img src="assets/img/naveed.jpg" alt="Naveed Ahmad" width="360" height="450">
+            <span>Atlanta, GA<br>open to relocation</span>
+          </div>
         </div>
-        <div class="portrait">
-          <img src="assets/img/naveed.jpg" alt="Naveed Ahmad" width="360" height="450">
-        </div>
+        <figure class="chart">
+          <div class="chart-head">
+            <span>stage chart, sample data</span>
+            <span class="legend"><span class="lg-p">treating pressure (psi)</span><span class="lg-r">slurry rate (bpm)</span><span class="lg-c">proppant (ppg)</span></span>
+          </div>
+          <canvas id="stage-chart" role="img" aria-label="Sample hydraulic fracturing stage chart showing treating pressure, slurry rate and proppant concentration over 90 minutes"></canvas>
+        </figure>
       </div>
     </section>
 

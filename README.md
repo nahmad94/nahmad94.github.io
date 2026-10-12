@@ -12,7 +12,7 @@ Personal site for Naveed Ahmad and Ahmad Consulting Group (ACG). Static HTML/CSS
 /assets/js/config.js    THE ONLY FILE YOU NEED TO EDIT: resume link, emails, LinkedIn, form provider
 /assets/js/main.js      Shared behavior (links from config, ledger highlight)
 /assets/js/contact.js   Contact form sending (Google Sheets, EmailJS or mailto)
-/assets/fonts/          Archivo (self-hosted, SIL OFL)
+/assets/fonts/          Archivo and JetBrains Mono (self-hosted, SIL OFL)
 /assets/img/            naveed.jpg headshot, icons/, work/ screenshots
 /assets/docs/           Naveed-Ahmad-Resume.pdf (web copy, no phone number)
 /setup/contact-form.gs  Google Apps Script for logging form submissions to a Sheet
