@@ -18,7 +18,7 @@ window.SITE_CONFIG = {
     provider: "sheets",   // falls back to "mailto" until sheetsUrl is filled in
 
     // For "sheets": paste the Web app URL from setup/contact-form.gs
-    sheetsUrl: "",
+    sheetsUrl: "https://script.google.com/macros/s/AKfycbw9RoTdfekXbFv0zOUijV5Sz_9oHMZodd6nn3PDOD10Sg1vP_VSiyF-eb8-_c5FEkNLMg/exec",
 
     // For "emailjs": values from your EmailJS dashboard
     emailjs: {
